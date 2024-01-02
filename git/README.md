@@ -1,7 +1,3 @@
-# BSM201 PROJE
-# Proje Konusu: Kıyafet Seçme Uygulaması
-# Ekip Üyeleri: Ece Bayraktar(220101033) & Şimal Bikem Ceylan(220101035)
-
 # Diziler (Arrays):
    Kullanıldığı Dosyalar: cart.js, data.json, product.js
    Kullanım Alanları:
