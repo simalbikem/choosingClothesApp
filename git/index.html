@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>220101033_220101035</title>
+    <title>220101035</title>
 
     <!-- Glide.js Css CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
@@ -12,9 +12,96 @@
     <link rel="icon" href="https://cdn.qukasoft.com/f/996869/cG96WmFta3QrNjQrTm53Z1RvTnE/images/logo/favicon-23.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="css/main.css" />
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initializeParticles();
+
+        window.addEventListener('resize', function(){
+          particlesJS('snow', 'destroy');
+          initializeParticles();
+        });
+      });
+
+      function initializeParticles() {
+        particlesJS("snow", {
+          "particles": {
+            "number": {
+              "value": 200,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "opacity": {
+              "value": 0.7,
+              "random": false,
+              "anim": {
+                "enable": false
+              }
+            },
+            "size": {
+              "value": calculateParticleSize(),
+              "random": true,
+              "anim": {
+                "enable": false
+              }
+            },
+            "line_linked": {
+              "enable": false
+            },
+            "move": {
+              "enable": true,
+              "speed": 2,
+              "direction": "bottom",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": true,
+                "rotateX": 300,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "events": {
+              "onhover": {
+                  "enable": false
+              },
+              "onclick": {
+                  "enable": false
+              },
+              "resize": false
+            }
+          },
+          "retina_detect": true
+        });
+      }
+
+      function calculateParticleSize() {
+        var windowWidth = window.innerWidth;
+        if (windowWidth > 992) {
+            return 4;
+        } else if (windowWidth > 768) {
+            return 3;
+        } else if (windowWidth > 576) {
+            return 2;
+        } else {
+            return 1;
+        }
+      }
+    </script>
+
   </head>
 
   <body>
+    <div id="snow"></div>
     <!--! header start -->
     <header>
       <div class="global-notification">
@@ -392,58 +479,51 @@
     <section class="slider">
       <div class="slider-elements">
         <div class="slider-image-a">
-          <a href="">
             <img
               src="img/slider/slider_a/slider.png"
               class="img-fluid-a"
               alt=""
             />
-          </a>
         </div>
 
         <!--* category-a start  -->
         <section class="categories">
-          <ul class="category-list">
-            <li class="category-item">
-              <a href="#">
-                <img
-                  src="img/categories/category-a/categories1.png"
-                  alt=""
-                  class="category-image"
-                />
-              </a>
-            </li>
+          <div class="category-list-a">
+            <ul class="category-list">
+              <li class="category-item">
+                  <img
+                    src="img/categories/category-a/categories1.png"
+                    alt=""
+                    class="category-image"
+                  />
+              </li>
 
-            <li class="category-item">
-              <a href="#">
-                <img
-                  src="img/categories/category-a/categories2.png"
-                  alt=""
-                  class="category-image"
-                />
-              </a>
-            </li>
+              <li class="category-item">
+                  <img
+                    src="img/categories/category-a/categories2.png"
+                    alt=""
+                    class="category-image"
+                  />
+              </li>
+            </ul>
+            <ul class="category-list">
+              <li class="category-item">
+                  <img
+                    src="img/categories/category-a/categories3.png"
+                    alt=""
+                    class="category-image"
+                  />
+              </li>
 
-            <li class="category-item">
-              <a href="#">
-                <img
-                  src="img/categories/category-a/categories3.png"
-                  alt=""
-                  class="category-image"
-                />
-              </a>
-            </li>
-
-            <li class="category-item">
-              <a href="#">
-                <img
-                  src="img/categories/category-a/categories4.png"
-                  alt=""
-                  class="category-image"
-                />
-              </a>
-            </li>
-          </ul>
+              <li class="category-item">
+                  <img
+                    src="img/categories/category-a/categories4.png"
+                    alt=""
+                    class="category-image"
+                  />
+              </li>
+            </ul>
+          </div>
         </section>
         <!--* category-a end  -->
 
@@ -541,47 +621,44 @@
 
     <!--! category-b start  -->
     <section class="categories">
-      <ul class="category-list">
-        <li class="category-item">
-          <a href="#">
-            <img
-              src="img/categories/category-b/categories5.png"
-              alt=""
-              class="category-image"
-            />
-          </a>
-        </li>
-
-        <li class="category-item">
-          <a href="#">
-            <img
-              src="img/categories/category-b/categories6.png"
-              alt=""
-              class="category-image"
-            />
-          </a>
-        </li>
-
-        <li class="category-item">
-          <a href="#">
-            <img
-              src="img/categories/category-b/categories7.png"
-              alt=""
-              class="category-image"
-            />
-          </a>
-        </li>
-
-        <li class="category-item">
-          <a href="#">
-            <img
-              src="img/categories/category-b/categories8.png"
-              alt=""
-              class="category-image"
-            />
-          </a>
-        </li>
-      </ul>
+      <div class="category-b">
+        <div class="category-list-a">
+          <ul class="category-list">
+            <li class="category-item">
+                <img
+                  src="img/categories/category-b/categories5.png"
+                  alt=""
+                  class="category-image"
+                />
+            </li>
+    
+            <li class="category-item">
+                <img
+                  src="img/categories/category-b/categories6.png"
+                  alt=""
+                  class="category-image"
+                />
+            </li>
+          </ul>
+          <ul class="category-list">
+            <li class="category-item">
+                <img
+                  src="img/categories/category-b/categories7.png"
+                  alt=""
+                  class="category-image"
+                />
+            </li>
+    
+            <li class="category-item">
+                <img
+                  src="img/categories/category-b/categories8.png"
+                  alt=""
+                  class="category-image"
+                />
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!--! category-b end  -->
 
@@ -782,7 +859,7 @@
             <div class="site-copyright">
               <p>
                 Tüm bilgileriniz 256bit SSL Sertifikası ile korunmaktadır. ©2024
-                Tüm Hakları Saklıdır _ by Şimal Bikem CEYLAN & Ece BAYRAKTAR
+                Tüm Hakları Saklıdır _ by Şimal Bikem CEYLAN
               </p>
             </div>
 
